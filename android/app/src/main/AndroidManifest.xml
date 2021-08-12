@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.controle_css">
+    package="com.example.projeto_css">
    <application
-        android:label="controle_css"
+        android:label="projeto_css"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
