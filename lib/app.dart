@@ -21,29 +21,34 @@ class _AppState extends State<App> {
       controller: _entradaController,
       textAlign: TextAlign.center,
       decoration: InputDecoration(
-          border:
-              OutlineInputBorder(borderRadius: BorderRadius.circular(30.0))),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30.0),
+        ),
+        focusColor: Colors.blueAccent,
+      ),
+      enabled: false,
     );
   }
 
-  Widget _logoImage() {
-    return Card(
-      child: Padding(
-        padding: EdgeInsets.all(50.0),
-        child: Row(
-          children: <Widget>[
-            Container(
-              width: 80.0,
-              height: 80.0,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+  //Widget _logoImage() {
+  //  return Padding(
+  //    padding: EdgeInsets.all(10.0),
+  //    child: Row(
+  //      children: <Widget>[
+  //        Container(
+  //          width: 80.0,
+  //          height: 80.0,
+  //          decoration: BoxDecoration(
+  //              shape: BoxShape.circle,
+  //              image: DecorationImage(
+  //                image: AssetImage("assets/images/logo_css.png"),
+  //                fit: BoxFit.cover,
+  //              )),
+  //        )
+  //      ],
+  //    ),
+  //  );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -57,9 +62,10 @@ class _AppState extends State<App> {
         child: Center(
           child: Column(
             children: [
-              _logoImage(),
+              //_logoImage(),
               _inputText(),
             ],
+            mainAxisAlignment: MainAxisAlignment.center,
           ),
         ),
       ),
